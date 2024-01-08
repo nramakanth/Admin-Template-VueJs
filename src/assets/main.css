@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track{
+  background: #2D3748;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #CBD5E0;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #718096;
+}
+.fade-up-enter-active, .fade-up-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
+.fade-up-enter, .fade-up-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-in-right-enter-active, .fade-in-right-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
+.fade-in-right-enter, .fade-in-right-leave-to {
+  opacity: 0;
+  transform: translateX(20px); /* Adjust the value for your desired distance */
+}
+
+
+
+
+@keyframes fadeInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.animate-right {
+  animation: fadeInRight 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.fadeInUp{
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+
+@keyframes fadeInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.fade-left {
+  animation: fadeInLeft 3s ease forwards;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown ;
+  animation-duration: 1s; /* adjust as needed */
+}
+@keyframes fadeDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.fadeDown {
+  animation-name: fadeDown;
+  animation-duration: 1s; /* adjust as needed */
+}
+
+
