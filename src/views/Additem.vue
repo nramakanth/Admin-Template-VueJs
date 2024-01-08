@@ -29,7 +29,7 @@
       </div>
       <div class="w-full md:w-1/2 px-3">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 ml-3" for="grid-password">
-          Re-Password
+          Confirm Password
         </label>
         <input id="grid-password" class="appearance-none block w-full text-black border-gray-200 rounded-full  focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500" type="password" placeholder="******************">
         <p class="text-gray-600 text-xs italic ml-3">
